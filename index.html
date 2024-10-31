@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Page Title</title>
+</head>
+<body>
+  <!-- The DOM -->
+  <h1>THE TITLE OF YOUR WEBPAGE</h1>
+  <div id="container">
+    <div class="content">This is the glorious text-content!</div>
+  </div>
+
+  <script>
+ 
+   // Select the container element
+const container = document.querySelector("#container");
+
+
+// Create a <p> element with red text that says “Hey I’m red!”
+const redParagraph = document.createElement("p");
+redParagraph.textContent = "Hey I’m red!";
+redParagraph.style.color = "red"; // Set the text color to red
+container.appendChild(redParagraph);
+
+// Create a <p> element with blue text that says “”
+  const blueParagraph = document.createElement("h3");
+blueParagraph.textContent = "I’m a blue h3!";
+blueParagraph.style.color = "blue"; // Set the text color to blue
+container.appendChild(blueParagraph);
+
+
+// Create a <div> element with blue text that says “”
+  const div2 = document.createElement("div");
+div2.style.backgroundColor = "pink"; 
+div2.style.border = "2 px solid black"; 
+container.appendChild(div2);
+
+// Create a <h1> element with text that says “”
+  const h1div = document.createElement("h1");
+  h1div.textContent = "I’m in a div";
+div2.appendChild(h1div);
+
+// Create a <p> element with text that says “”
+  const pdiv = document.createElement("p");
+  pdiv.textContent = "ME TOO!";
+div2.appendChild(pdiv);
+
+   
+
+  </script>
+</body>
+</html>
